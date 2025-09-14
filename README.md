@@ -3,10 +3,12 @@
 A simple and interactive To-Do List web app where you can **add tasks, mark them as done, edit, and delete them**.  
 Stay organized and boost your productivity 🚀  
 
-🔗 **Live Demo:** [View Project](https://js-todolist-localstorage.vercel.app/)  
+🔗 **Live Demo:** [View Project](http://notekeeper.obscuredev.space/)  
 
 ---
-https://yourusername.github.io/todo-list-app/
+
+https://github.com/BlackSarkk/js-todolist-localstorage  
+
 ## ✨ Features
 
 - ➕ Add new tasks  
@@ -24,7 +26,5 @@ https://yourusername.github.io/todo-list-app/
 - **HTML**  
 - **CSS**  
 - **JavaScript**  
-
----
 
 ```bash
