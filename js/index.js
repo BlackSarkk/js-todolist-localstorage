@@ -1,7 +1,11 @@
 import { createNote } from "./create.js";
 import { getDate, getNotes, saveNotes } from "./utils.js";
 
+
+
+
 // Function to check and update empty state
+
 const updateEmptyState = () => {
   const ul = document.querySelector('ul');
   const emptyState = document.querySelector('#empty-state');
@@ -20,6 +24,10 @@ const updateEmptyState = () => {
     emptyState.style.display = 'none';
   }
 };
+
+
+
+// LOAD localStorage content if available
 
 window.addEventListener("DOMContentLoaded", () => {
   const notes = getNotes();
@@ -50,7 +58,8 @@ const closeDialog = () => {
 
 
 
-// CLOSING DIALOG BOX
+// CLOSING DIALOG BOX if close/cancel button is clicked
+
 closeBtn.addEventListener('click', closeDialog)
 cancelBtn.addEventListener('click', closeDialog)
 
@@ -120,7 +129,7 @@ saveNote.addEventListener('click', () => {
 
 
 
-// OPNENING DIALOG BOX
+// OPNENING DIALOG BOX if add button is clicked
 
 
 addNote1.addEventListener("click", () => {
@@ -143,6 +152,9 @@ addNote2.addEventListener("click", () => {
     openDialog();
 
 });
+
+
+// Load the data on dialog box if edit icon is clicked  
 
 function handleEdit(headerEl, footerEl, timeEl) {
 

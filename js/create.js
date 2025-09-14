@@ -92,7 +92,7 @@ const createNote = (Header, Footer, Date, status, onEdit, id = Date.now()) => {
 
 
 
-    // Checkbox Initialize
+    // LINE Through logic if status is "completed"
 
     checkbox.checked = status === "completed";
     if (checkbox.checked) {
@@ -105,7 +105,7 @@ const createNote = (Header, Footer, Date, status, onEdit, id = Date.now()) => {
 
 
 
-    // Checkbox change listner
+    // Logic to change status if checkbox is clicked
 
     checkbox.addEventListener("change", () => {
         const done = checkbox.checked;
@@ -126,8 +126,7 @@ const createNote = (Header, Footer, Date, status, onEdit, id = Date.now()) => {
 
 
 
-    // Delete
-
+    // Delete the current Li
 
     dustbinParent.addEventListener("click", () => {
         li.remove();
@@ -145,7 +144,7 @@ const createNote = (Header, Footer, Date, status, onEdit, id = Date.now()) => {
     });
 
 
-    // Edit
+    // Open edit dialogBox if Edit icon is clicked
 
     pencilParent.addEventListener("click", () => {
         if (typeof onEdit === "function") {

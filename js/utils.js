@@ -19,6 +19,8 @@ export { getDate }
 
 
 
+// Saving data to browser LocalStorage
+
 const STORAGE_KEY = "myNotes";
 
 export function getNotes() {
