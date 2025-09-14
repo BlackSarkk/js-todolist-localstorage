@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Note taking app</title>
+    <title>Note Keeper</title>
     <link rel="stylesheet" href="css/layoutStyle.css">
     <link rel="stylesheet" href="css/layoutComponentStyles.css">
     <link rel="stylesheet" href="css/noteComponentStyles.css">
@@ -15,7 +15,7 @@
 <body>
     <header style="height: 8vh;">
         <nav id="top" class="nav">
-            <img style="cursor: pointer;" src="./assets/logo.svg" alt="logo" width="180px" onclick="()=>{}">
+            <img style="cursor: pointer;" src="./assets/logo.svg" alt="logo" width="180px" onclick="location.reload()">
             <div id="addNote1" class="primarybtn btn-black">+ Add Note</div>
         </nav>
     </header>
@@ -59,8 +59,7 @@
     <footer>
         <nav id="bottom" class="nav">
             <div class="navigation">
-                <div class="secondarybtn">Resources</div>
-                <div class="secondarybtn">Legal</div>
+                <div class="secondarybtn"><a target="_blank" href="https://github.com/BlackSarkk/js-todolist-localstorage">Source Code</a></div>
             </div>
         </nav>
     </footer>
