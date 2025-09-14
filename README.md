@@ -3,10 +3,10 @@
 A simple and interactive To-Do List web app where you can **add tasks, mark them as done, edit, and delete them**.  
 Stay organized and boost your productivity 🚀  
 
-🔗 **Live Demo:** [View Project](https://yourusername.github.io/todo-list-app/)  
+🔗 **Live Demo:** [View Project](https://js-todolist-localstorage.vercel.app/)  
 
 ---
-
+https://yourusername.github.io/todo-list-app/
 ## ✨ Features
 
 - ➕ Add new tasks  
@@ -27,10 +27,4 @@ Stay organized and boost your productivity 🚀
 
 ---
 
-## 🚀 Getting Started
-
-Clone the repository and open `index.html` in your browser:
-
 ```bash
-git clone https://github.com/yourusername/todo-list-app.git
-cd todo-list-app
