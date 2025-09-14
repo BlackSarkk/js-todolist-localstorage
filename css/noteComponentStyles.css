@@ -1,0 +1,125 @@
+/* NOTE CONTAINERS STYLES */
+#mid-bottom > ul > li {
+  border: 1px solid rgb(20, 20, 20);
+  width: 302px;
+  height: 217px;
+  background: #1e2128ff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+
+
+#note{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+#note-content{
+    /* border: 2px solid blue ; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 5px;
+}
+
+#note-header{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#note-footer{
+    font-size: 14px;
+    font-weight: 500;
+    color: #BDC1CAFF;
+}
+
+
+
+
+
+
+
+
+
+
+/* NOTE BUTTON ICON STYLES */
+
+
+#checkbox {
+    width: 25px;
+    height: 25px;
+    accent-color: #D64651FF; 
+    border-color: red;
+    cursor: pointer;
+}
+
+#note-edit{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 8px;
+    margin-left: 10px;
+    /* border: 2px solid blue ; */
+}
+
+.mini-btn{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+#pencil-parent{
+    background-color: rgba(255, 255, 255, 0.079);
+}
+
+#dustbin-parent{
+    background-color: #D64651FF;
+}
+
+.mini-btn-child{
+    width: 19px;
+}
+
+
+
+
+
+/* NOTE STATUS COMPONENT */
+
+#note-parent-footer{
+    border-top: 2px solid rgb(54, 51, 51);
+    width: 100%;
+    padding-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#time-parent{
+  font-size: 12px; 
+  line-height: 16px; 
+  font-weight: 400; 
+  color: #BDC1CAFF;
+}
+
+#status-parent{
+  font-size: 12px; 
+  line-height: 16px; 
+  font-weight: 500; 
+  color: #0F74C5FF; 
+  text-transform: capitalize;
+}

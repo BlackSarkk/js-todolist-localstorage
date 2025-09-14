@@ -1,0 +1,102 @@
+
+
+/* HEADER NAVIGATION PANEL SYLES */
+.navigation {
+  width: calc(5rem + 4vw);
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1vw;
+}
+
+
+
+
+/* PRIMARY BUTTONS STYLES */
+.primarybtn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 10px 14px;
+}
+
+
+
+/* COLOURED BUTTONS STYLES */
+.btn-black {
+  background-color: #262a33ff;
+  color: white;
+}
+
+.btn-black:hover {
+  background-color: rgb(29, 32, 40);
+}
+
+.btn-black:active {
+  background-color: rgb(21, 24, 29);
+  transform: scale(0.97);
+}
+
+.btn-blue {
+  background-color: #0f74c5ff;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: rgb(14, 101, 172);
+}
+
+.btn-blue:active {
+  background-color: rgb(13, 87, 147);
+  transform: scale(0.97);
+}
+
+
+
+/* SECONDARY BUTTONS STYLES */
+.secondarybtn {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 10px 14px;
+  text-transform: capitalize;
+}
+
+.secondarybtn:hover {
+  background-color: rgba(255, 255, 255, 0.079);
+}
+
+.secondarybtn:active {
+  color: rgba(255, 255, 255, 0.607);
+}
+
+
+
+/* MID CONTAINER STYLES */
+#mid-top {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#mid-top-text {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+#mid-bottom ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+
+
+
