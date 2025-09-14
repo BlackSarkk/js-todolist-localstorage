@@ -16,7 +16,7 @@ const updateEmptyState = () => {
     ul.style.display = 'none';
     emptyState.style.display = 'flex';
   } else {
-    ul.style.display = 'block';
+    ul.style.display = 'flex';
     emptyState.style.display = 'none';
   }
 };
