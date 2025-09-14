@@ -1,12 +1,32 @@
 import { createNote } from "./create.js";
 import { getDate, getNotes, saveNotes } from "./utils.js";
 
+// Function to check and update empty state
+const updateEmptyState = () => {
+  const ul = document.querySelector('ul');
+  const emptyState = document.querySelector('#empty-state');
+  const notes = getNotes();
+  
+  if (!ul || !emptyState) {
+    console.error('Could not find ul or empty-state elements');
+    return;
+  }
+  
+  if (notes.length === 0) {
+    ul.style.display = 'none';
+    emptyState.style.display = 'flex';
+  } else {
+    ul.style.display = 'block';
+    emptyState.style.display = 'none';
+  }
+};
 
 window.addEventListener("DOMContentLoaded", () => {
   const notes = getNotes();
   notes.forEach(n =>
     createNote(n.title, n.desc, n.date, n.status, handleEdit, n.id)
   );
+  updateEmptyState();
 });
 
 
@@ -69,6 +89,7 @@ saveNote.addEventListener('click', () => {
     notes.push(newNote);
     saveNotes(notes);
     createNote(title, desc, date, "pending", handleEdit, id);
+    updateEmptyState();
 
   } else {
 

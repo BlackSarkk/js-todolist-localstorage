@@ -134,6 +134,14 @@ const createNote = (Header, Footer, Date, status, onEdit, id = Date.now()) => {
         let notes = getNotes();
         notes = notes.filter(n => n.id !== parseInt(li.dataset.id));
         saveNotes(notes);
+        
+        // Check if we need to show empty state
+        if (notes.length === 0) {
+            const ul = document.querySelector('ul');
+            const emptyState = document.querySelector('#empty-state');
+            ul.style.display = 'none';
+            emptyState.style.display = 'flex';
+        }
     });
 
 
