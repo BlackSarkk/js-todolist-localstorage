@@ -1,4 +1,4 @@
-# ✅ To-Do List App
+# ✅ NoteKeeper
 
 A simple and interactive To-Do List web app where you can **add tasks, mark them as done, edit, and delete them**.  
 Stay organized and boost your productivity 🚀  
